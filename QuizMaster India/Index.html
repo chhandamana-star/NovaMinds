@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GK Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ========================= -->
+    <!-- START SCREEN -->
+    <!-- ========================= -->
+
+    <div id="start-screen">
+
+        <h1>📚 GK Quiz Generator</h1>
+
+        <p class="subtitle">
+            Test your General Knowledge from Class 5 to Class 10
+        </p>
+
+        <label>Player Name</label>
+
+        <input
+            type="text"
+            id="playerName"
+            placeholder="Enter your name">
+
+        <label>Select Class</label>
+
+        <select id="classSelect">
+
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            <option>Class 8</option>
+            <option>Class 9</option>
+            <option>Class 10</option>
+
+        </select>
+
+        <label>Select Genre</label>
+
+        <select id="genreSelect">
+
+            <option>Mixed</option>
+            <option>Science</option>
+            <option>History</option>
+            <option>Geography</option>
+            <option>Sports</option>
+            <option>India</option>
+            <option>World</option>
+
+        </select>
+
+       
+        <label>Number of Questions</label>
+
+        <select id="questionCount">
+
+            <option value="10">10 Questions</option>
+            <option value="20">20 Questions</option>
+            <option value="30">30 Questions</option>
+
+        </select>
+
+        <button id="startBtn">
+            ▶ Start Quiz
+        </button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- QUIZ SCREEN -->
+    <!-- ========================= -->
+
+    <div id="quiz-screen">
+
+        <div class="top-bar">
+
+            <div id="questionNumber">
+                Question 1 / 10
+            </div>
+
+            <div id="timer">
+                ⏱ 30s
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h2 id="questionText">
+
+            Question will appear here
+
+        </h2>
+
+        <div id="options">
+
+            <!-- Options created by JavaScript -->
+
+        </div>
+
+        <button id="nextBtn">
+
+            Next Question
+
+        </button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- RESULT SCREEN -->
+    <!-- ========================= -->
+
+    
+<div id="result-screen">
+
+    <h1>🎉 Quiz Finished!</h1>
+
+
+    <!-- Quiz Summary -->
+
+    <div id="quizSummary">
+
+    </div>
+
+
+    <!-- Performance Message -->
+
+    <div id="performanceMessage">
+
+    </div>
+
+
+    <!-- Category Performance -->
+
+    <div id="categoryPerformance">
+
+    </div>
+
+
+    <!-- Detailed Question Review -->
+
+    <h2 class="review-title">
+
+        📝 Question Review
+
+    </h2>
+
+
+    <div id="questionReview">
+
+    </div>
+
+
+    <button id="restartBtn">
+
+        🔄 Play Again
+
+    </button>
+
+
+</div>
+
+<!-- ========================= -->
+<!-- Question Files -->
+<!-- ========================= -->
+
+<script src="questions/class5.js"></script>
+<script src="questions/class6.js"></script>
+<script src="questions/class7.js"></script>
+<script src="questions/class8.js"></script>
+<script src="questions/class9.js"></script>
+<script src="questions/class10.js"></script>
+<!-- Question Database -->
+
+<script src="data.js"></script>
+
+<!-- Main Script -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
